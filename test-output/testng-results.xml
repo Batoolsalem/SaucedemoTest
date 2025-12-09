@@ -1,107 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="5" passed="4" failed="1" skipped="0">
+<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-11-30T18:51:25 MST" name="Default suite" finished-at="2025-11-30T18:52:02 MST" duration-ms="36497">
+  <suite started-at="2025-12-03T22:25:54 MST" name="Default suite" finished-at="2025-12-03T22:26:03 MST" duration-ms="8788">
     <groups>
     </groups>
-    <test started-at="2025-11-30T18:51:25 MST" name="Default test" finished-at="2025-11-30T18:52:02 MST" duration-ms="36497">
-      <class name="mytest.test">
-        <test-method is-config="true" signature="mysetup()[pri:0, instance:mytest.test@2ceb80a1]" started-at="2025-11-30T18:51:25 MST" name="mysetup" finished-at="2025-11-30T18:51:25 MST" duration-ms="20" status="PASS">
+    <test started-at="2025-12-03T22:25:54 MST" name="Default test" finished-at="2025-12-03T22:26:03 MST" duration-ms="8788">
+      <class name="saucedemo.testone">
+        <test-method is-config="true" signature="mysetup()[pri:0, instance:saucedemo.testone@2ceb80a1]" started-at="2025-12-03T22:25:54 MST" name="mysetup" finished-at="2025-12-03T22:25:55 MST" duration-ms="34" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- mysetup -->
-        <test-method signature="mytest()[pri:1, instance:mytest.test@2ceb80a1]" started-at="2025-11-30T18:51:25 MST" name="mytest" finished-at="2025-11-30T18:51:32 MST" duration-ms="6570" status="PASS">
+        <test-method signature="addandremov()[pri:1, instance:saucedemo.testone@2ceb80a1]" started-at="2025-12-03T22:25:55 MST" name="addandremov" finished-at="2025-12-03T22:25:58 MST" duration-ms="3862" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- mytest -->
-        <test-method signature="myinformation()[pri:2, instance:mytest.test@2ceb80a1]" started-at="2025-11-30T18:51:32 MST" name="myinformation" finished-at="2025-11-30T18:51:47 MST" duration-ms="14877" status="PASS">
+        </test-method> <!-- addandremov -->
+        <test-method signature="addandremov()[pri:1, instance:saucedemo.testone@2ceb80a1]" started-at="2025-12-03T22:25:58 MST" name="addandremov" finished-at="2025-12-03T22:26:00 MST" duration-ms="1806" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- myinformation -->
-        <test-method signature="Logout()[pri:3, instance:mytest.test@2ceb80a1]" started-at="2025-11-30T18:51:47 MST" name="Logout" finished-at="2025-11-30T18:51:49 MST" duration-ms="2080" status="PASS">
+        </test-method> <!-- addandremov -->
+        <test-method signature="addandremov()[pri:1, instance:saucedemo.testone@2ceb80a1]" started-at="2025-12-03T22:26:00 MST" name="addandremov" finished-at="2025-12-03T22:26:02 MST" duration-ms="1719" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Logout -->
-        <test-method signature="Login()[pri:4, instance:mytest.test@2ceb80a1]" started-at="2025-11-30T18:51:49 MST" name="Login" finished-at="2025-11-30T18:51:53 MST" duration-ms="4403" status="PASS">
+        </test-method> <!-- addandremov -->
+        <test-method signature="cart()[pri:2, instance:saucedemo.testone@2ceb80a1]" started-at="2025-12-03T22:26:02 MST" name="cart" finished-at="2025-12-03T22:26:03 MST" duration-ms="686" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Login -->
-        <test-method signature="DeleteAccount()[pri:5, instance:mytest.test@2ceb80a1]" started-at="2025-11-30T18:51:53 MST" name="DeleteAccount" finished-at="2025-11-30T18:52:02 MST" duration-ms="8429" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchSessionException">
-            <message>
-              <![CDATA[invalid session id: session deleted as the browser has closed the connection
-from disconnected: unable to send message to renderer
-  (Session info: chrome=142.0.7444.176)
-Build info: version: '4.38.0', revision: '6b412e825c*'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.9'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [f67fc68da2981f00739edf9fca4265f1, clickElement {id=f.85EEE43CAD5380510C28EA45C7AB5D01.d.51A387725C454181EC0FA3BFD6F6CC6B.e.185}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 142.0.7444.176, chrome: {chromedriverVersion: 142.0.7444.175 (302067f14a4..., userDataDir: C:\Users\Admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61723}, goog:processID: 22732, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61723/devtoo..., se:cdpVersion: 142.0.7444.176, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (f67fc68da2981f00739edf9fca4265f1)] -> xpath: //a[@data-qa='continue-button']]
-Session ID: f67fc68da2981f00739edf9fca4265f1]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchSessionException: invalid session id: session deleted as the browser has closed the connection
-from disconnected: unable to send message to renderer
-  (Session info: chrome=142.0.7444.176)
-Build info: version: '4.38.0', revision: '6b412e825c*'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.9'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [f67fc68da2981f00739edf9fca4265f1, clickElement {id=f.85EEE43CAD5380510C28EA45C7AB5D01.d.51A387725C454181EC0FA3BFD6F6CC6B.e.185}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 142.0.7444.176, chrome: {chromedriverVersion: 142.0.7444.175 (302067f14a4..., userDataDir: C:\Users\Admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61723}, goog:processID: 22732, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61723/devtoo..., se:cdpVersion: 142.0.7444.176, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (f67fc68da2981f00739edf9fca4265f1)] -> xpath: //a[@data-qa='continue-button']]
-Session ID: f67fc68da2981f00739edf9fca4265f1
-at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
-at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:557)
-at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
-at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
-at mytest.test.DeleteAccount(test.java:124)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:741)
-at org.testng.TestRunner.run(TestRunner.java:616)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchSessionException -->
+        </test-method> <!-- cart -->
+        <test-method signature="myinformatio()[pri:3, instance:saucedemo.testone@2ceb80a1]" started-at="2025-12-03T22:26:03 MST" name="myinformatio" finished-at="2025-12-03T22:26:03 MST" duration-ms="577" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- DeleteAccount -->
-        <test-method is-config="true" signature="finish()[pri:0, instance:mytest.test@2ceb80a1]" started-at="2025-11-30T18:52:02 MST" name="finish" finished-at="2025-11-30T18:52:02 MST" duration-ms="1" status="PASS">
+        </test-method> <!-- myinformatio -->
+        <test-method is-config="true" signature="aftermytest()[pri:0, instance:saucedemo.testone@2ceb80a1]" started-at="2025-12-03T22:26:03 MST" name="aftermytest" finished-at="2025-12-03T22:26:03 MST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- finish -->
-      </class> <!-- mytest.test -->
+        </test-method> <!-- aftermytest -->
+      </class> <!-- saucedemo.testone -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

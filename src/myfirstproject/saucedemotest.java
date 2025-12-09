@@ -1,4 +1,4 @@
-package saucedemo;
+package myfirstproject;
 import java.time.Duration;
 import java.util.List;
 
@@ -11,7 +11,7 @@ import org.openqa.selenium.edge.EdgeDriver;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
-public class testone {
+public class saucedemotest {
 	WebDriver driver=new EdgeDriver();
 	 String mywebsite="https://www.saucedemo.com/";
 	 String username="standard_user";
@@ -90,16 +90,6 @@ public void myinformatio() {
 		
 	}
 
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
 	
 	
 	
