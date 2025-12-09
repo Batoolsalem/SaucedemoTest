@@ -1,41 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
+<testng-results ignored="1" total="6" passed="5" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-12-03T22:25:54 MST" name="Default suite" finished-at="2025-12-03T22:26:03 MST" duration-ms="8788">
+  <suite started-at="2025-12-08T22:01:36 MST" name="Default suite" finished-at="2025-12-08T22:01:48 MST" duration-ms="11806">
     <groups>
     </groups>
-    <test started-at="2025-12-03T22:25:54 MST" name="Default test" finished-at="2025-12-03T22:26:03 MST" duration-ms="8788">
-      <class name="saucedemo.testone">
-        <test-method is-config="true" signature="mysetup()[pri:0, instance:saucedemo.testone@2ceb80a1]" started-at="2025-12-03T22:25:54 MST" name="mysetup" finished-at="2025-12-03T22:25:55 MST" duration-ms="34" status="PASS">
+    <test started-at="2025-12-08T22:01:36 MST" name="Default test" finished-at="2025-12-08T22:01:48 MST" duration-ms="11806">
+      <class name="myfirstproject.saucedemotest">
+        <test-method is-config="true" signature="mysetup()[pri:0, instance:myfirstproject.saucedemotest@4b2a01d4]" started-at="2025-12-08T22:01:36 MST" name="mysetup" finished-at="2025-12-08T22:01:36 MST" duration-ms="33" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- mysetup -->
-        <test-method signature="addandremov()[pri:1, instance:saucedemo.testone@2ceb80a1]" started-at="2025-12-03T22:25:55 MST" name="addandremov" finished-at="2025-12-03T22:25:58 MST" duration-ms="3862" status="PASS">
+        <test-method signature="addandremov()[pri:1, instance:myfirstproject.saucedemotest@4b2a01d4]" started-at="2025-12-08T22:01:36 MST" name="addandremov" finished-at="2025-12-08T22:01:38 MST" duration-ms="1998" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addandremov -->
-        <test-method signature="addandremov()[pri:1, instance:saucedemo.testone@2ceb80a1]" started-at="2025-12-03T22:25:58 MST" name="addandremov" finished-at="2025-12-03T22:26:00 MST" duration-ms="1806" status="PASS">
+        <test-method signature="login()[pri:1, instance:myfirstproject.saucedemotest@4b2a01d4]" started-at="2025-12-08T22:01:38 MST" name="login" finished-at="2025-12-08T22:01:39 MST" duration-ms="575" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- addandremov -->
-        <test-method signature="addandremov()[pri:1, instance:saucedemo.testone@2ceb80a1]" started-at="2025-12-03T22:26:00 MST" name="addandremov" finished-at="2025-12-03T22:26:02 MST" duration-ms="1719" status="PASS">
+        </test-method> <!-- login -->
+        <test-method signature="addcart()[pri:2, instance:myfirstproject.saucedemotest@4b2a01d4]" started-at="2025-12-08T22:01:39 MST" name="addcart" finished-at="2025-12-08T22:01:40 MST" duration-ms="675" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- addandremov -->
-        <test-method signature="cart()[pri:2, instance:saucedemo.testone@2ceb80a1]" started-at="2025-12-03T22:26:02 MST" name="cart" finished-at="2025-12-03T22:26:03 MST" duration-ms="686" status="PASS">
+        </test-method> <!-- addcart -->
+        <test-method signature="cart()[pri:3, instance:myfirstproject.saucedemotest@4b2a01d4]" started-at="2025-12-08T22:01:40 MST" name="cart" finished-at="2025-12-08T22:01:44 MST" duration-ms="3983" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- cart -->
-        <test-method signature="myinformatio()[pri:3, instance:saucedemo.testone@2ceb80a1]" started-at="2025-12-03T22:26:03 MST" name="myinformatio" finished-at="2025-12-03T22:26:03 MST" duration-ms="577" status="PASS">
+        <test-method signature="myinformatio()[pri:4, instance:myfirstproject.saucedemotest@4b2a01d4]" started-at="2025-12-08T22:01:44 MST" name="myinformatio" finished-at="2025-12-08T22:01:48 MST" duration-ms="4021" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- myinformatio -->
-        <test-method is-config="true" signature="aftermytest()[pri:0, instance:saucedemo.testone@2ceb80a1]" started-at="2025-12-03T22:26:03 MST" name="aftermytest" finished-at="2025-12-03T22:26:03 MST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="aftermytest()[pri:0, instance:myfirstproject.saucedemotest@4b2a01d4]" started-at="2025-12-08T22:01:48 MST" name="aftermytest" finished-at="2025-12-08T22:01:48 MST" duration-ms="370" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- aftermytest -->
-      </class> <!-- saucedemo.testone -->
+      </class> <!-- myfirstproject.saucedemotest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

@@ -22,23 +22,23 @@ public class saucedemotest {
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(3000));
 	}
 		
-	@Test (priority = 1,invocationCount   = 3)
+	@Test (priority = 1)
 	public void addandremov() throws InterruptedException {
 		driver.get(mywebsite);
 		driver.manage().window().maximize();
-		login();
-		addcart();
-		remove();	
+//		login();
+//		addcart();
+//		remove();	
 
 	}
-	
+	@Test(priority = 1)
 	public void login() {
 	driver.findElement(By.id("user-name")).sendKeys(username);
 	driver.findElement(By.id("password")).sendKeys(password);;
 	driver.findElement(By.id("login-button")).click();
 
 	}
-	
+	@Test(priority = 2)
 	public void addcart() throws InterruptedException {
 		
 //		driver.findElement(By.id("add-to-cart-sauce-labs-backpack")).click();
@@ -49,6 +49,7 @@ public class saucedemotest {
     for(int i=0;i<addall.size();i++) {
 	addall.get(i).click();}}
 	
+	@Test(enabled = false)
 public void remove() {
 		
 		List<WebElement>addall=driver.findElements(By.cssSelector(".btn.btn_secondary.btn_small.btn_inventory"));
@@ -57,24 +58,24 @@ public void remove() {
 		
 	}
 	
-	@Test(priority = 2)
-	public void cart() {
+	@Test(priority = 3)
+	public void cart() throws InterruptedException {
 		
 		driver.navigate().to("https://www.saucedemo.com/cart.html");
 //driver.findElement(By.className("shopping_cart_badge")).click();
 driver.findElement(By.id("checkout")).click();
-
+Thread.sleep(3000);
 
 }
-	@Test(priority = 3)
-public void myinformatio() {
+	@Test(priority = 4)
+public void myinformatio() throws InterruptedException {
 		
 		driver.findElement(By.id("first-name")).sendKeys("Batool");
 		driver.findElement(By.id("last-name")).sendKeys("Abualghanam");
 		driver.findElement(By.id("postal-code")).sendKeys("123");
 		driver.findElement(By.id("continue")).click();
 
-//		Thread.sleep(3000);
+		Thread.sleep(3000);
 		driver.findElement(By.id("finish")).click();
 
 	}
@@ -85,7 +86,7 @@ public void myinformatio() {
 	
 	public void aftermytest() {
 		
-
+driver.close();
 		
 		
 	}
