@@ -3,15 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="saucedemo.testone">
+      <class name="saucedemotest">
         <methods>
-          <include name="login"/>
-          <include name="remove"/>
-          <include name="aftermytest"/>
+          <include name="AddRandomlyItems"/>
+          <include name="cart"/>
+          <include name="myinformatio"/>
           <include name="mysetup"/>
-          <include name="addcart"/>
+          <include name="aftermytest"/>
         </methods>
-      </class> <!-- saucedemo.testone -->
+      </class> <!-- saucedemotest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

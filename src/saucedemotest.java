@@ -1,98 +1,56 @@
-package myfirstproject;
-import java.time.Duration;
 import java.util.List;
-
 import org.openqa.selenium.By;
-import org.openqa.selenium.UsernameAndPassword;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
-import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
-public class saucedemotest {
-	WebDriver driver=new EdgeDriver();
-	 String mywebsite="https://www.saucedemo.com/";
-	 String username="standard_user";
-	 String password="secret_sauce";
-	 
-	@BeforeTest
-	public void mysetup() {
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(3000));
-	}
-		
-	@Test (priority = 1)
-	public void addandremov() throws InterruptedException {
-		driver.get(mywebsite);
-		driver.manage().window().maximize();
-//		login();
-//		addcart();
-//		remove();	
 
+public class SauceDemoTest{
+
+	WebDriver driver = new EdgeDriver();
+    String URL = "https://www.saucedemo.com/";
+
+    @BeforeTest
+	public void Setup(){
+	    driver.get(URL);
+	    driver.manage().window().maximize();
 	}
+
+    // Login with standard user account
 	@Test(priority = 1)
-	public void login() {
-	driver.findElement(By.id("user-name")).sendKeys(username);
-	driver.findElement(By.id("password")).sendKeys(password);;
-	driver.findElement(By.id("login-button")).click();
-
+	public void Login(){
+		driver.findElement(By.id("user-name")).sendKeys("standard_user");
+		driver.findElement(By.id("password")).sendKeys("secret_sauce");
+		driver.findElement(By.id("login-button")).click();	
 	}
-	@Test(priority = 2)
-	public void addcart() throws InterruptedException {
-		
-//		driver.findElement(By.id("add-to-cart-sauce-labs-backpack")).click();
-//		driver.findElement(By.id("add-to-cart-sauce-labs-bike-light")).click();
 
-		//add all cart
-	List<WebElement>addall=driver.findElements(By.cssSelector(".btn.btn_primary.btn_small.btn_inventory"));
-    for(int i=0;i<addall.size();i++) {
-	addall.get(i).click();}}
-	
-	@Test(enabled = false)
-public void remove() {
-		
-		List<WebElement>addall=driver.findElements(By.cssSelector(".btn.btn_secondary.btn_small.btn_inventory"));
+    // Add All items to cart
+	@Test(priority = 2)
+	public void AddRandomlyItems() {
+		List<WebElement>addall=driver.findElements(By.cssSelector(".btn.btn_primary.btn_small.btn_inventory"));
 	    for(int i=0;i<addall.size();i++) {
 		addall.get(i).click();}
-		
+
+	    WebElement cartBadge = driver.findElement(By.className("shopping_cart_badge"));
+	    System.out.println("Items added to cart: " + cartBadge.getText());
 	}
-	
+
+    //  checkout and confirm 
 	@Test(priority = 3)
-	public void cart() throws InterruptedException {
-		
-		driver.navigate().to("https://www.saucedemo.com/cart.html");
-//driver.findElement(By.className("shopping_cart_badge")).click();
-driver.findElement(By.id("checkout")).click();
-Thread.sleep(3000);
+	public void Checkout() throws InterruptedException {
+		driver.findElement(By.className("shopping_cart_link")).click();
+		driver.findElement(By.id("checkout")).click();
 
-}
-	@Test(priority = 4)
-public void myinformatio() throws InterruptedException {
-		
 		driver.findElement(By.id("first-name")).sendKeys("Batool");
-		driver.findElement(By.id("last-name")).sendKeys("Abualghanam");
-		driver.findElement(By.id("postal-code")).sendKeys("123");
-		driver.findElement(By.id("continue")).click();
+	    driver.findElement(By.id("last-name")).sendKeys("Salem");
+	    driver.findElement(By.id("postal-code")).sendKeys("1234");
+	    driver.findElement(By.id("continue")).click();
+	    Thread.sleep(1000);
 
-		Thread.sleep(3000);
-		driver.findElement(By.id("finish")).click();
+	    driver.findElement(By.id("finish")).click();
+	    Thread.sleep(2000);
 
 	}
 	
-
-	
-	@AfterTest
-	
-	public void aftermytest() {
-		
-driver.close();
-		
-		
-	}
-
-	
-	
-	
-
 }
